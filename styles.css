@@ -33,6 +33,18 @@ body {
     background: var(--antico-color);
 }
 
+.giorno-speciale {
+    background-color: var(--crema-color);
+}
+
+.giorno-headings {
+    color: var(--antico-color)
+}
+
+.body-e-poi {
+    background-color: var(--foglia-color);
+}
+
 .img-container {
     position: relative;
 }
@@ -47,6 +59,29 @@ body {
     top: 60px;
     z-index: 3;
     text-align: center;
+}
+
+.overlay-txt-poi {
+    position: absolute;
+    left: 20%;
+    top: 320px;
+    z-index: 3;
+    text-align: center;
+    color: var(--moro-color) !important;
+}
+
+.bottom-large-poi {
+    left: 25%;
+    max-width: 50%;
+    min-height: 100%;
+    margin-top: 1.5em;
+}
+
+.top-small-poi {
+    max-width: 40%;
+    top: 250px;
+    left: 0%;
+    z-index: 2;
 }
 
 .date {
@@ -66,6 +101,10 @@ body {
     border: 3px solid var(--crema-color);
 }
 
+.padding-0 {
+    padding: 0;
+}
+
 .text-center {
     text-align: center;
 }
@@ -76,13 +115,55 @@ body {
 }
 
 .semicircle {
-    height: 300px;
+    height: 260px;
   /* width = 2 * height */
-  width: 600px;
+  width: 520px;
   /* border-radius top-left, top-right = height */
-  border-radius: 0 0 300px 300px;
+  border-radius: 0 0 260px 260px;
   display: block;
   margin: 0 auto;
+}
+
+.oval {
+    height: 300px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.margin-body {
+    margin-bottom: 5rem;
+}
+
+.form-container {
+    position: relative;
+}
+
+.rsvp-background {
+    position: absolute;
+    max-width: 100%;
+    filter:  brightness(54%) saturate(59%);
+}
+
+.overlay-form {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    min-width: 100%;
+    margin: 100px auto;
+}
+
+.rsvp-headings {
+    color: var(--crema-color);
+    font-family: "GN-sans";
+}
+
+.rsvp-font {
+    color: var(--crema-color);
+    text-align: left;
 }
 
 h2, h4, h5, h6 {
@@ -93,9 +174,12 @@ h2, h4, h5, h6 {
 
 h1 {
     font-family: "GN-sans";
-    color: var(--headings-font-color);
     font-size: 96px;
     line-height: 1.5;
+}
+
+.index-heading {
+    color: var(--crema-color)
 }
 
 h3 {
@@ -328,6 +412,21 @@ footer .social-links a:hover {
     border: 1px solid var(--moro-color);
     border-radius: 5px;
  }
+
+ .giorno-button {
+    font-size: 18px;
+    color: var(--moro-color);
+    background-color: var(--crema-color);
+    padding: 15px 20px;
+    text-decoration: none;
+    border: 1px solid var(--moro-color);
+    border-radius: 5px;
+    height: fit-content;
+    margin-left: 7em;
+    margin-right: 7em;
+ }
+
+
 
 .btn-branding {
     background-color: var(--branding-color);

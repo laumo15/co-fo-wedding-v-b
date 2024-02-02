@@ -30,45 +30,39 @@
             </ul>
         </nav>
     </div>
-    <div class="container content-container">
-        <div class="row">
-            <div class="col-lg-6">
-                <img src="/img/Costanza_and_Lorenzo-176.jpg" class="img-fluid rounded portrait"/>
-            </div>
-            <div class="col-lg-6">
-                <div class="content">
-                    <h1>Vi aspettiamo!</h1>
-                    <h2 class="mb-5 mt-5">È gradita gentile conferma entro il 30 giugno 2024.</h2>
-                    <form id="form">
-                        <input placeholder="Nome">
-                        <input placeholder="Cognome">
-                        <select>
-                            <option value="" disabled selected>Menù</option>
-                            <option value="Standard">Standard</option>
-                            <option value="Vegetariano">Vegetariano</option>
-                            <option value="Vegano">Vegano</option>
-                            <option value="Senza lattosio">Senza lattosio</option>
-                            <option value="Senza glutine">Senza glutine</option>
-                        </select>
-                        <br>
-                        Per quanti ospiti stai confermando, oltre a te?
-                        <select id="ospiti" class="ml">
-                            <option value="" disabled selected>Numero ospiti</option>
-                            <option value = "Nessuno">Nessuno</option>
-                            <option value = 1>1</option>
-                            <option value = 2>2</option>
-                            <option value = 3>3</option>
-                            <option value = 4>4</option>
-                            <option value = 5>5</option>
-                            <option value = 6>6</option>
-                        </select>
-                        <div id="guestlist"></div>
-                        <textarea rows="2" cols="58" placeholder="Altre note, allergie, messaggi per gli sposi?"></textarea>
-                        <br>
-                        <input type="submit" value="Invia" class="invia">
-                    </form>
-                </div>
-            </div>
+    <div class="container form-container">
+        <img src="/img/Costanza_and_Lorenzo-95.jpg" class="rsvp-background">
+        <div class="overlay-form">
+            <h1 class="rsvp-headings">Vi aspettiamo!</h1>
+            <h3 class="rsvp-headings mb-5 mt-5">È gradita gentile conferma entro il 30 giugno 2024.</h2>
+            <form id="form">
+                <input placeholder="Nome">
+                <input placeholder="Cognome">
+                <select>
+                    <option value="" disabled selected>Menù</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Vegetariano">Vegetariano</option>
+                    <option value="Vegano">Vegano</option>
+                    <option value="Senza lattosio">Senza lattosio</option>
+                    <option value="Senza glutine">Senza glutine</option>
+                </select>
+                <br>
+                <span class="rsvp-font">Per quanti ospiti stai confermando, oltre a te?</span>
+                <select id="ospiti" class="ml">
+                    <option value="" disabled selected>Numero ospiti</option>
+                    <option value = "Nessuno">Nessuno</option>
+                    <option value = 1>1</option>
+                    <option value = 2>2</option>
+                    <option value = 3>3</option>
+                    <option value = 4>4</option>
+                    <option value = 5>5</option>
+                    <option value = 6>6</option>
+                </select>
+                <div id="guestlist"></div>
+                <textarea rows="2" cols="58" placeholder="Altre note, allergie, messaggi per gli sposi?"></textarea>
+                <br>
+                <input type="submit" value="Invia" class="invia">
+            </form>
         </div>
     </div>
     <script>
@@ -77,7 +71,7 @@
             let guestlist = document.querySelector("#guestlist");
             guestlist.innerHTML = "";
             for (let i = 1; i <= ospiti; i++) {
-                guestlist.innerHTML = guestlist.innerHTML + `#${i} <input placeholder="Nome"></input>
+                guestlist.innerHTML = guestlist.innerHTML + `<input placeholder="Nome"></input>
                         <input placeholder="Cognome"></input>
                         <select>
                             <option value="" disabled selected>Menù</option>
