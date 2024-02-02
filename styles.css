@@ -38,6 +38,7 @@ body {
 }
 
 .giorno-headings {
+    font-family: "GN-sans";
     color: var(--antico-color)
 }
 
