@@ -33,6 +33,14 @@ body {
     background: var(--antico-color);
 }
 
+.index-body {
+    background-color: var(--foglia-color);
+}
+
+.filter {
+    filter:sepia(0.2);
+}
+
 .giorno-speciale {
     background-color: var(--crema-color);
 }
@@ -179,7 +187,7 @@ h1 {
 }
 
 .index-heading {
-    color: var(--crema-color)
+    color: var(--crema-color);
 }
 
 h3 {
