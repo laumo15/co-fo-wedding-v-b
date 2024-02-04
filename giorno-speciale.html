@@ -15,91 +15,81 @@
     <link rel="shortcut icon" type="image/png" href="/images/logo-small.png"/>
     <meta name="description" content="Dettagli">
 </head>
-<body class="giorno-speciale">
+<body>
     <div class="container">
-        <nav class="d-flex justify-content-between">
-            <a href="/" title="Homepage">
-                <img src="images/logo.png" class="logo d-none d-md-block" alt="Co&Fo logo"/>
-                <img src="images/logo-small.png" class="logo d-block d-md-none" alt="logo small"/>
-            </a>
+        <nav class="d-flex justify-content-center">
             <ul>
                 <li><a href="/index.html" title="Homepage">Home</a></li>
-                <li class="active"><a href="/" title="RSVP">Un giorno speciale</a></li>
+                <li  class="active"><a href="#" title="RSVP">Un giorno speciale</a></li>
+                <li><a href="/" title="Homepage">
+                    <img src="images/logo.png" class="logo d-none d-md-inline" alt="logo"/>
+                    <img src="images/logo-small.png" class="logo d-inline d-md-none" alt="logo small"/>
+                    </a>
                 <li><a href="/rsvp.html" title="RSVP">RSVP</a></li>
                 <li><a href="/e-poi.html" title="... e poi?">.... e poi?</a></li>
             </ul>
         </nav>
     </div>
-        <img src="/img/toscanini.png" class="semicircle">
-    </div>
-        <div class="text-center font-giorno d-flex justify-content-between mt-5">
-            <a class="giorno-button" href="https://maps.app.goo.gl/p9sWovKUyWrUBLYCA" target="_blank">Indicazioni</a>
-            <div>
-                <h2 class="giorno-headings">7 settembre 2024</h2>
-                <h3 class="giorno-headings mb-5">Villa Toscanini, Ripalta Guerina (CR)</h3>
-            </div>
-            <a class="giorno-button" href="#" onclick="openCalendarPopup()">Aggiungi in agenda</a>
-        </div>
-        <div class="text-center font-giorno margin-body">
-            <p class="mb-4">
-                Vi aspettiamo il <strong>7 settembre 2024 alle ore 16.30 </strong>per la cerimonia del nostro Sì nei giardini di Villa Toscanini, a Ripalta Guerina (CR).
-            </p>
-            <p class="mb-4">
-                Dopo la cerimonia, continueremo a festeggiare in Villa anche per il ricevimento.
-            </p>
-            <p class="mb-4">
-                E a seguire... si balla!
-            </p>
-        </div>
-        <div id="calendar-popup" class="calendar-popup">
-            <div class="closer">
-                <svg class="closer" onclick="closeCalendarPopup()" height="1.5rem" viewBox="0 0 24 24" width="2rem" xmlns="http://www.w3.org/2000/svg">
-                        <title>Close icon</title>
-                        <path d="M4 20L20 4M4 4l16 16" stroke="#440500" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                </svg>
-            </div>
-                <h4>Aggiungi in agenda:</h4>
-                <add-to-calendar-button class="visibility-inherit"
-                            name="Costanza e Lorenzo"
-                            startDate="2024-09-07"
-                            startTime="16:30"
-                            endDate="2024-09-08"
-                            endTime="03:00"
-                            timeZone="Europe/Rome"
-                            location="Villa Toscanini, Via XXV Aprile 33, 26010 Ripalta Guerina (CR)"
-                            description="Ebbene sì, ci sposiamo davvero!"
-                            options="'Apple','Google','iCal','Outlook.com','Yahoo'"
-                            buttonsList
-                            hideTextLabelButton
-                            buttonStyle="round"
-                            lightMode="bodyScheme"
-                            >
-                </add-to-calendar-button>
-        </div>
-        <!-- <div class="row">
-            <div class="col-lg-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
                 <div class="content">
-                    <h1>7 settembre 2024</h1>
-                    <h2 class="mb-5 mt-5">Villa Toscanini, Ripalta Guerina (CR)</h2>
-                    <p class="mb-4">
-                        Vi aspettiamo il <strong>7 settembre 2024 alle ore 16.30 </strong>per la cerimonia del nostro Sì nei giardini di Villa Toscanini, a Ripalta Guerina (CR).
+                    <h1 class="giorno-heading">7 settembre 2024</h1>
+                    <h2 class="mb-5 mt-5 giorno-h2">Villa Toscanini, Ripalta Guerina (CR)</h2>
+                    <div class="giorno-par">
+                        <p class="mb-4">
+                            Vi aspettiamo il <strong>7 settembre 2024 alle ore 16.30 </strong>per la cerimonia del nostro Sì nei giardini di Villa Toscanini, a Ripalta Guerina (CR).
+                        </p>
+                        <p class="mb-4">
+                            Dopo la cerimonia, continueremo a festeggiare in Villa anche per il ricevimento.
+                        </p>
+                        <p class="mb-4">
+                            E a seguire... si balla!
                     </p>
-                    <p class="mb-4">
-                        Dopo la cerimonia, continueremo a festeggiare in Villa anche per il ricevimento.
-                    </p>
-                    <p class="mb-4">
-                        E a seguire... si balla!
-                    </p>
+                    </div>
                     <div class="buttons mt-5">
-                        <a class="home-button" href="https://maps.app.goo.gl/p9sWovKUyWrUBLYCA" target="_blank">Indicazioni</a>
-                        <a class="home-button" href="#" onclick="openCalendarPopup()">Aggiungi in agenda</a>
+                        <a class="giorno-button" href="https://maps.app.goo.gl/p9sWovKUyWrUBLYCA" target="_blank">Indicazioni →</a>
+                        <a class="giorno-button" href="#" onclick="openCalendarPopup()">Aggiungi in agenda →</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <img src="/img/toscanini-crop.png" class="img-fluid rounded portrait"/>
+            <div class="col-lg-5 img-container">
+                <img src="/img/toscanini-crop.png" class="img-fluid portrait overlay-img"/>
+                <img src="/img/acquerello.png" class="overlay-img giorno-small">
             </div>
-        </div> -->
+        </div>
+    </div>
+    
+    <div id="calendar-popup" class="calendar-popup">
+        <div class="closer">
+            <svg class="closer" onclick="closeCalendarPopup()" height="1.5rem" viewBox="0 0 24 24" width="2rem" xmlns="http://www.w3.org/2000/svg">
+                    <title>Close icon</title>
+                    <path d="M4 20L20 4M4 4l16 16" stroke="#440500" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+        </div>
+            <h4>Aggiungi in agenda:</h4>
+            <add-to-calendar-button class="visibility-inherit"
+                        name="Costanza e Lorenzo"
+                        startDate="2024-09-07"
+                        startTime="16:30"
+                        endDate="2024-09-08"
+                        endTime="03:00"
+                        timeZone="Europe/Rome"
+                        location="Villa Toscanini, Via XXV Aprile 33, 26010 Ripalta Guerina (CR)"
+                        description="Ebbene sì, ci sposiamo davvero!"
+                        options="'Apple','Google','iCal','Outlook.com','Yahoo'"
+                        buttonsList
+                        hideTextLabelButton
+                        buttonStyle="round"
+                        lightMode="bodyScheme"
+                        >
+            </add-to-calendar-button>
+    </div>
+    <div class="text-center footer footer-giorno mt-120 pt-120">
+            <footer class="text-center justify-content-between width-100 mt-20 pt-20">
+                <p class="text-center mt-20 pt-20">Foto Costanza e Lorenzo di <a href="https://www.instagram.com/marcomarazzi.ph" target="_blank" alt="Marco Marazzi Photo Instagram">Marco Marazzi</a>. Website <a href="mailto:laura.l.morelli@outlook.it" target="_blank" alt="Laura Morelli Web Designer Email">Laura Morelli</a> </p>
+            </footer>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
     <script>

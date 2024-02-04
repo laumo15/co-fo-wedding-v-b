@@ -17,52 +17,54 @@
 </head>
 <body>
     <div class="container">
-        <nav class="d-flex justify-content-between">
-            <a href="/" title="Homepage">
-                <img src="images/logo.png" class="logo d-none d-md-block" alt="Co&Fo logo"/>
-                <img src="images/logo-small.png" class="logo d-block d-md-none" alt="logo small"/>
-            </a>
+        <nav class="d-flex justify-content-center">
             <ul>
                 <li><a href="/index.html" title="Homepage">Home</a></li>
                 <li><a href="/giorno-speciale.html" title="RSVP">Un giorno speciale</a></li>
-                <li class="active"><a href="/" title="RSVP">RSVP</a></li>
+                <li><a href="/" title="Homepage">
+                    <img src="images/logo.png" class="logo d-none d-md-inline" alt="logo"/>
+                    <img src="images/logo-small.png" class="logo d-inline d-md-none" alt="logo small"/>
+                    </a>
+                <li class="active"><a href="#" title="RSVP">RSVP</a></li>
                 <li><a href="/e-poi.html" title="... e poi?">.... e poi?</a></li>
             </ul>
         </nav>
     </div>
-    <div class="container form-container">
-        <img src="/img/Costanza_and_Lorenzo-95.jpg" class="rsvp-background">
-        <div class="overlay-form">
-            <h1 class="rsvp-headings">Vi aspettiamo!</h1>
-            <h3 class="rsvp-headings mb-5 mt-5">È gradita gentile conferma entro il 30 giugno 2024.</h2>
-            <form id="form">
-                <input placeholder="Nome">
-                <input placeholder="Cognome">
-                <select>
-                    <option value="" disabled selected>Menù</option>
-                    <option value="Standard">Standard</option>
-                    <option value="Vegetariano">Vegetariano</option>
-                    <option value="Vegano">Vegano</option>
-                    <option value="Senza lattosio">Senza lattosio</option>
-                    <option value="Senza glutine">Senza glutine</option>
-                </select>
-                <br>
-                <span class="rsvp-font">Per quanti ospiti stai confermando, oltre a te?</span>
-                <select id="ospiti" class="ml">
-                    <option value="" disabled selected>Numero ospiti</option>
-                    <option value = "Nessuno">Nessuno</option>
-                    <option value = 1>1</option>
-                    <option value = 2>2</option>
-                    <option value = 3>3</option>
-                    <option value = 4>4</option>
-                    <option value = 5>5</option>
-                    <option value = 6>6</option>
-                </select>
-                <div id="guestlist"></div>
-                <textarea rows="2" cols="58" placeholder="Altre note, allergie, messaggi per gli sposi?"></textarea>
-                <br>
-                <input type="submit" value="Invia" class="invia">
-            </form>
+    <div class="mb-5">
+        <div class="container form-container">
+            <img src="/img/160a8a57-454b-42d8-b5f6-b56c6085450c.jpg" class="rsvp-background mb-5">
+            <div class="overlay-form">
+                <h1 class="rsvp-headings">Vi aspettiamo!</h1>
+                <h3 class="rsvp-headings mt-3 conferma-bottom">È gradita gentile conferma entro il 15 luglio 2024.</h2>
+                <form id="form">
+                    <input placeholder="Nome">
+                    <input placeholder="Cognome">
+                    <select>
+                        <option value="" disabled selected>Menù</option>
+                        <option value="Standard">Standard</option>
+                        <option value="Vegetariano">Vegetariano</option>
+                        <option value="Vegano">Vegano</option>
+                        <option value="Senza lattosio">Senza lattosio</option>
+                        <option value="Senza glutine">Senza glutine</option>
+                    </select>
+                    <br>
+                    <span class="rsvp-font">Per quanti ospiti stai confermando, oltre a te?</span>
+                    <select id="ospiti" class="ml">
+                        <option value="" disabled selected>Numero ospiti</option>
+                        <option value = "Nessuno">Nessuno</option>
+                        <option value = 1>1</option>
+                        <option value = 2>2</option>
+                        <option value = 3>3</option>
+                        <option value = 4>4</option>
+                        <option value = 5>5</option>
+                        <option value = 6>6</option>
+                    </select>
+                    <div id="guestlist"></div>
+                    <textarea rows="2" cols="58" placeholder="Altre note, allergie, messaggi per gli sposi?"></textarea>
+                    <br>
+                    <input type="submit" value="Invia" class="invia">
+                </form>
+            </div>
         </div>
     </div>
     <script>

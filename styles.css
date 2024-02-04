@@ -30,11 +30,7 @@
 body {
     font-family: var(--default-font-family);
     color: var(--default-font-color);
-    background: var(--antico-color);
-}
-
-.index-body {
-    background-color: var(--foglia-color);
+    background: var(--foglia-color);
 }
 
 .filter {
@@ -108,6 +104,15 @@ body {
     border: 3px solid var(--crema-color);
 }
 
+.giorno-small {
+    left: -40px;
+    top: 240px;
+}
+
+.width-e-poi {
+    text-align: center;
+}
+
 .padding-0 {
     padding: 0;
 }
@@ -145,6 +150,31 @@ body {
     margin-bottom: 5rem;
 }
 
+.giorno-heading{
+    font-size: 78px;
+}
+
+.giorno-h2 {
+    color: var(--moro-color);
+    font-family: "GN-sans";
+    font-weight: 400;
+    font-size: 42px;
+}
+
+.giorno-par {
+    max-width: 80%;
+}
+
+ .giorno-button {
+    font-size: 18px;
+    color: var(--moro-color);
+    text-decoration: underline;
+    height: fit-content;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1.5em;
+ }
+
 .form-container {
     position: relative;
 }
@@ -153,6 +183,7 @@ body {
     position: absolute;
     max-width: 100%;
     filter:  brightness(54%) saturate(59%);
+    padding-bottom: 3em !important;
 }
 
 .overlay-form {
@@ -160,7 +191,7 @@ body {
     z-index: 2;
     text-align: center;
     min-width: 100%;
-    margin: 100px auto;
+    margin: 60px auto;
 }
 
 .rsvp-headings {
@@ -172,9 +203,25 @@ body {
     color: var(--crema-color);
     text-align: left;
     font-size: 22px;
+    line-height: 4;
 }
 
-h2, h4, h5, h6 {
+.conferma-bottom {
+    margin-bottom: 1.2em;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.footer a {
+    color: var(--moro-color);
+}
+
+h2, h5, h6 {
     font-family: var(--headings-font-family);
     color: var(--headings-font-color);
     font-weight: bold;
@@ -184,6 +231,11 @@ h1 {
     font-family: "GN-sans";
     font-size: 96px;
     line-height: 1.5;
+}
+
+h4 {
+    font-family: "GN-sans";
+    color: var(--moro-color);
 }
 
 .index-heading {
@@ -211,6 +263,10 @@ p {
 
 .font-giorno {
     font-size: 22px;
+}
+
+.font-giorno p {
+    line-height: 1.8;
 }
 
 form {
@@ -290,12 +346,12 @@ textarea {
 .open-popup {
     transition: ease-in-out 300ms;
     visibility: visible;
-    top: 50%;
+    top: 30%;
     transform: translate(-50% -50%) scale(1);
 }
 
 nav {
-    padding: 20px;
+    padding: 5px 0 15px 0;
     font-size: 18px;
 }
 
@@ -323,6 +379,21 @@ nav a:hover, nav li.active a {
 
 footer {
     margin: 60px 0;
+}
+
+.footer-home {
+    top: 30px;
+    left: 300px;
+}
+
+.footer-giorno {
+    top: 60px;
+    left: 0px;
+}
+
+.footer-poi {
+    top: 70px;
+    margin-bottom: 30px;
 }
 
 footer .contact-box {
@@ -420,21 +491,6 @@ footer .social-links a:hover {
     border: 1px solid var(--moro-color);
     border-radius: 5px;
  }
-
- .giorno-button {
-    font-size: 18px;
-    color: var(--moro-color);
-    background-color: var(--crema-color);
-    padding: 15px 20px;
-    text-decoration: none;
-    border: 1px solid var(--moro-color);
-    border-radius: 5px;
-    height: fit-content;
-    margin-left: 7em;
-    margin-right: 7em;
- }
-
-
 
 .btn-branding {
     background-color: var(--branding-color);
