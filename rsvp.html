@@ -65,28 +65,24 @@
                 <div id="guestlist"></div>
                 <textarea name="Messaggio" rows="2" cols="58" placeholder="Altre note, allergie, messaggi per gli sposi?"></textarea>
                 <br>
-                    <!-- <input name="Nome" placeholder="Nome">
-
-                    
-                                        
-                -->
-                    <button type="submit" value="Invia" class="invia">
+                <button type="submit" value="Invia" class="invia">
                 </form>
             </div>
         </div>
-        <div id="grazie-popup" class="grazie-popup">
-        <div class="closer">
-            <svg class="closer" onclick="closeCalendarPopup()" height="1.5rem" viewBox="0 0 24 24" width="2rem" xmlns="http://www.w3.org/2000/svg">
-                    <title>Close icon</title>
-                    <path d="M4 20L20 4M4 4l16 16" stroke="#440500" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-            </svg>
-        </div>
+    </div>
+    <div id="grazie-popup" class="grazie-popup">
+            <div class="closer">
+                <svg class="closer" onclick="closeGraziePopup()" height="1.5rem" viewBox="0 0 24 24" width="2rem" xmlns="http://www.w3.org/2000/svg">
+                        <title>Close icon</title>
+                        <path d="M4 20L20 4M4 4l16 16" stroke="#440500" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+            </div>
             <h4>Grazie!</h4>
             <p>Abbiamo ricevuto la tua risposta</p>
-    </div>
-    </div>
+        </div>
     <script>
-        // webapp url: https://script.google.com/macros/s/AKfycbyyQ4ehh_emMuvaxJ6BV2VXPL3xw2jKEObLqmz0T45fU5XwpNBcLtFxOWqVz0tmkf-V/exec //
+        let graziePopup = document.getElementById("grazie-popup");
+
         document.querySelector("#ospiti").addEventListener("change", function(e){
             let ospiti = e.target.value;
             let guestlist = document.querySelector("#guestlist");
@@ -104,6 +100,16 @@
                         </select> <br>`
             }
         })
+
+        function grazie() {
+            graziePopup.classList.add("open-popup");
+        }
+
+        function closeGraziePopup() {
+            event.preventDefault();
+            graziePopup.classList.remove("open-popup");
+        }
+
         window.addEventListener("DOMContentLoaded", function () {
             const yourForm = document.getElementById('form');
             yourForm.addEventListener("submit", function(e) {
@@ -112,9 +118,8 @@
                 console.log(data);
                 const action = e.target.action;
                 fetch(action, { method: 'POST', body: data, })
-                .then(() => {
-                alert("Success!");
-             }) }); })
+                grazie();
+             }); })
     </script>
 </body>
 </html>

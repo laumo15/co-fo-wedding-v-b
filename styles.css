@@ -346,10 +346,11 @@ textarea {
 }
 
 .open-popup {
-    transition: ease-in-out 300ms;
-    visibility: visible;
-    top: 30%;
-    transform: translate(-50% -50%) scale(1);
+    transition: ease-in-out 300ms !important;
+    visibility: visible !important;
+    top: 30% !important;
+    transform: translate(-50% -50%) scale(1) !important;
+    z-index: 1000 !important;
 }
 
 .grazie-popup {
