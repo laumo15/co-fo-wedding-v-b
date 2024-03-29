@@ -38,34 +38,39 @@
                 <h3 class="rsvp-headings mt-3 conferma-bottom">È gradita gentile conferma entro il 15 luglio 2024.</h2>
                 <form id="form"
                     method="POST"
-                    action="https://script.google.com/macros/s/AKfycbyyQ4ehh_emMuvaxJ6BV2VXPL3xw2jKEObLqmz0T45fU5XwpNBcLtFxOWqVz0tmkf-V/exec"
+                    action="https://script.google.com/macros/s/AKfycbxZvh2WHvk_BpWx_kQ61sCB5q1QjYSLj6J1p9MOB1SFnBitp4_R8fDoLek6rziYkOE3xg/exec"
                 >
-                    <input name="Nome" placeholder="Nome">
-                    <input name="Cognome" placeholder="Cognome">
-                    <select name="Menu">
+                <input name="Nome" type="text" placeholder="Nome" required>
+                <input name="Cognome" type="text" placeholder="Cognome" required>
+                <select name="Menu">
                         <option value="" disabled selected>Menù</option>
                         <option value="Standard">Standard</option>
                         <option value="Vegetariano">Vegetariano</option>
                         <option value="Vegano">Vegano</option>
                         <option value="Senza lattosio">Senza lattosio</option>
                         <option value="Senza glutine">Senza glutine</option>
-                    </select>
-                    <br>
-                    <span class="rsvp-font">Per quanti ospiti stai confermando, oltre a te?</span>
-                    <select name="Ospiti" id="ospiti" class="ml">
-                        <option value="" disabled selected>Numero ospiti</option>
-                        <option value = "Nessuno">Nessuno</option>
-                        <option value = 1>1</option>
-                        <option value = 2>2</option>
-                        <option value = 3>3</option>
-                        <option value = 4>4</option>
-                        <option value = 5>5</option>
-                        <option value = 6>6</option>
-                    </select>
-                    <div id="guestlist"></div>
-                    <textarea name="Messaggio" rows="2" cols="58" placeholder="Altre note, allergie, messaggi per gli sposi?"></textarea>
-                    <br>
-                    <input type="submit" value="Invia" class="invia">
+                </select>
+                <br>
+                <span class="rsvp-font">Per quanti ospiti stai confermando, oltre a te?</span>
+                <select name="Ospiti" id="ospiti" class="ml">
+                    <option value="" disabled selected>Numero ospiti</option>
+                    <option value = "Nessuno">Nessuno</option>
+                    <option value = 1>1</option>
+                    <option value = 2>2</option>
+                    <option value = 3>3</option>
+                    <option value = 4>4</option>
+                    <option value = 5>5</option>
+                    <option value = 6>6</option>
+                </select>
+                <div id="guestlist"></div>
+                <textarea name="Messaggio" rows="2" cols="58" placeholder="Altre note, allergie, messaggi per gli sposi?"></textarea>
+                <br>
+                    <!-- <input name="Nome" placeholder="Nome">
+
+                    
+                                        
+                -->
+                    <button type="submit" value="Invia" class="invia">
                 </form>
             </div>
         </div>
@@ -107,12 +112,9 @@
                 console.log(data);
                 const action = e.target.action;
                 fetch(action, { method: 'POST', body: data, })
-                //thankYou();
-             }) });
-        //let form = document.querySelector("#form");
-        //form.addEventListener("submit"), function(e){
-        //    e.preventDefault();
-        //}
+                .then(() => {
+                alert("Success!");
+             }) }); })
     </script>
 </body>
 </html>
