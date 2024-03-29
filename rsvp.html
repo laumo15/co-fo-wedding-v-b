@@ -22,8 +22,8 @@
                 <li><a href="/index.html" title="Homepage">Home</a></li>
                 <li><a href="/giorno-speciale.html" title="RSVP">Un giorno speciale</a></li>
                 <li><a href="/" title="Homepage">
-                    <img src="images/logo.png" class="logo d-none d-md-inline" alt="logo"/>
-                    <img src="images/logo-small.png" class="logo d-inline d-md-none" alt="logo small"/>
+                    <img src="img/logo.png" class="logo d-none d-md-inline" alt="logo"/>
+                    <img src="img/logo-small.png" class="logo d-inline d-md-none" alt="logo small"/>
                     </a>
                 <li class="active"><a href="#" title="RSVP">RSVP</a></li>
                 <li><a href="/e-poi.html" title="... e poi?">.... e poi?</a></li>
@@ -36,10 +36,13 @@
             <div class="overlay-form">
                 <h1 class="rsvp-headings">Vi aspettiamo!</h1>
                 <h3 class="rsvp-headings mt-3 conferma-bottom">È gradita gentile conferma entro il 15 luglio 2024.</h2>
-                <form id="form">
-                    <input placeholder="Nome">
-                    <input placeholder="Cognome">
-                    <select>
+                <form id="form"
+                    method="POST"
+                    action="https://script.google.com/macros/s/AKfycbyyQ4ehh_emMuvaxJ6BV2VXPL3xw2jKEObLqmz0T45fU5XwpNBcLtFxOWqVz0tmkf-V/exec"
+                >
+                    <input name="Nome" placeholder="Nome">
+                    <input name="Cognome" placeholder="Cognome">
+                    <select name="Menu">
                         <option value="" disabled selected>Menù</option>
                         <option value="Standard">Standard</option>
                         <option value="Vegetariano">Vegetariano</option>
@@ -49,7 +52,7 @@
                     </select>
                     <br>
                     <span class="rsvp-font">Per quanti ospiti stai confermando, oltre a te?</span>
-                    <select id="ospiti" class="ml">
+                    <select name="Ospiti" id="ospiti" class="ml">
                         <option value="" disabled selected>Numero ospiti</option>
                         <option value = "Nessuno">Nessuno</option>
                         <option value = 1>1</option>
@@ -60,22 +63,33 @@
                         <option value = 6>6</option>
                     </select>
                     <div id="guestlist"></div>
-                    <textarea rows="2" cols="58" placeholder="Altre note, allergie, messaggi per gli sposi?"></textarea>
+                    <textarea name="Messaggio" rows="2" cols="58" placeholder="Altre note, allergie, messaggi per gli sposi?"></textarea>
                     <br>
                     <input type="submit" value="Invia" class="invia">
                 </form>
             </div>
         </div>
+        <div id="grazie-popup" class="grazie-popup">
+        <div class="closer">
+            <svg class="closer" onclick="closeCalendarPopup()" height="1.5rem" viewBox="0 0 24 24" width="2rem" xmlns="http://www.w3.org/2000/svg">
+                    <title>Close icon</title>
+                    <path d="M4 20L20 4M4 4l16 16" stroke="#440500" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+        </div>
+            <h4>Grazie!</h4>
+            <p>Abbiamo ricevuto la tua risposta</p>
+    </div>
     </div>
     <script>
+        // webapp url: https://script.google.com/macros/s/AKfycbyyQ4ehh_emMuvaxJ6BV2VXPL3xw2jKEObLqmz0T45fU5XwpNBcLtFxOWqVz0tmkf-V/exec //
         document.querySelector("#ospiti").addEventListener("change", function(e){
             let ospiti = e.target.value;
             let guestlist = document.querySelector("#guestlist");
             guestlist.innerHTML = "";
             for (let i = 1; i <= ospiti; i++) {
-                guestlist.innerHTML = guestlist.innerHTML + `<input placeholder="Nome"></input>
-                        <input placeholder="Cognome"></input>
-                        <select>
+                guestlist.innerHTML = guestlist.innerHTML + `<input name="Nome ospite ${i}" placeholder="Nome"></input>
+                        <input name="Cognome ospite ${i}" placeholder="Cognome"></input>
+                        <select name="Menu ospite ${i}">
                             <option value="" disabled selected>Menù</option>
                             <option value="Standard">Standard</option>
                             <option value="Vegetariano">Vegetariano</option>
@@ -85,10 +99,20 @@
                         </select> <br>`
             }
         })
-        let form = document.querySelector("#form");
-        form.addEventListener("submit"), function(e){
-            e.preventDefault();
-        }
+        window.addEventListener("DOMContentLoaded", function () {
+            const yourForm = document.getElementById('form');
+            yourForm.addEventListener("submit", function(e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                console.log(data);
+                const action = e.target.action;
+                fetch(action, { method: 'POST', body: data, })
+                //thankYou();
+             }) });
+        //let form = document.querySelector("#form");
+        //form.addEventListener("submit"), function(e){
+        //    e.preventDefault();
+        //}
     </script>
 </body>
 </html>

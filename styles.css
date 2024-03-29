@@ -352,6 +352,19 @@ textarea {
     transform: translate(-50% -50%) scale(1);
 }
 
+.grazie-popup {
+    position: absolute;
+    top: 0;
+    left: 38%;
+    max-width: 30%;
+    padding: 1.5rem 3rem 3.5rem;
+    background-color: var(--crema-color);
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
 nav {
     padding: 5px 0 15px 0;
     font-size: 18px;
