@@ -17,7 +17,8 @@
 </head>
 <body>
     <div class="container">
-        <nav class="d-flex justify-content-center">
+    <div class="container">
+        <nav class="d-flex justify-content-center max-width">
             <ul>
                 <li><a href="/index.html" title="Homepage">Home</a></li>
                 <li  class="active"><a href="#" title="RSVP">Un giorno speciale</a></li>
@@ -30,13 +31,13 @@
             </ul>
         </nav>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-7">
-                <div class="content">
-                    <h1 class="giorno-heading">7 settembre 2024</h1>
-                    <h2 class="mb-5 mt-5 giorno-h2">Villa Toscanini, Ripalta Guerina (CR)</h2>
-                    <div class="giorno-par">
+    <div class="container max-width">
+        <div class="row reverse max-width">
+            <div class="col-lg-7 order-2 order-md-1 max-width">
+                <div class="content max-width">
+                    <h1 class="giorno-heading max-width">7 settembre 2024</h1>
+                    <h2 class="mb-5 mt-5 giorno-h2 max-width">Villa Toscanini, Ripalta Guerina (CR)</h2>
+                    <div class="giorno-par max-width">
                         <p class="mb-4">
                             Vi aspettiamo il <strong>7 settembre 2024 alle ore 16.30 </strong>per la cerimonia del nostro Sì nei giardini di Villa Toscanini, a Ripalta Guerina (CR).
                         </p>
@@ -47,19 +48,19 @@
                             E a seguire... si balla!
                     </p>
                     </div>
-                    <div class="buttons mt-5">
+                    <div class="buttons mt-5 max-width">
                         <a class="giorno-button" href="https://maps.app.goo.gl/p9sWovKUyWrUBLYCA" target="_blank">Indicazioni →</a>
                         <a class="giorno-button" href="#" onclick="openCalendarPopup()">Aggiungi in agenda →</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 img-container">
-                <img src="/img/toscanini-crop.png" class="img-fluid portrait overlay-img"/>
-                <img src="/img/acquerello.png" class="overlay-img giorno-small">
+            <div class="col-lg-5 img-container max-width order-1 order-md-2">
+                <img src="/img/toscanini-crop.png" class="img-fluid portrait overlay-img max-width"/>
+                <img src="/img/acquerello.png" class="overlay-img giorno-small max-width">
             </div>
         </div>
     </div>  
-    <div id="calendar-popup" class="calendar-popup">
+    <div id="calendar-popup" class="calendar-popup max-width">
         <div class="closer">
             <svg class="closer" onclick="closeCalendarPopup()" height="1.5rem" viewBox="0 0 24 24" width="2rem" xmlns="http://www.w3.org/2000/svg">
                     <title>Close icon</title>
@@ -84,8 +85,8 @@
                         >
             </add-to-calendar-button>
     </div>
-    <div class="text-center footer footer-giorno mt-120 pt-120">
-            <footer class="text-center justify-content-between width-100 mt-20 pt-20">
+    <div class="text-center footer footer-giorno mt-120 pt-120 max-width">
+            <footer class="text-center justify-content-between width-100 mt-20 pt-20 max-width">
                 <p class="text-center mt-20 pt-20">Foto Costanza e Lorenzo di <a href="https://www.instagram.com/marcomarazzi.ph" target="_blank" alt="Marco Marazzi Photo Instagram">Marco Marazzi</a>. Website <a href="mailto:laura.l.morelli@outlook.it" target="_blank" alt="Laura Morelli Web Designer Email">Laura Morelli</a> </p>
             </footer>
         </div>

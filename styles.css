@@ -415,7 +415,7 @@ footer {
 }
 
 .footer-giorno {
-    top: 60px;
+    top: 0px;
     left: 0px;
 }
 
@@ -616,8 +616,15 @@ footer .social-links a:hover {
     }
 
     @media (max-width: 576px) {
+        body {
+            max-width: 100%;
+        }
         nav {
             padding-bottom: 0;
+        }
+
+        .container {
+            padding: 0;
         }
 
         .img-container {
@@ -661,5 +668,12 @@ footer .social-links a:hover {
             top: 360px;
         }
 
+        .giorno-small {
+            visibility: hidden;
+        }
+
+        .footer-giorno {
+            font-size: 12px;
+        }
     }
 }
