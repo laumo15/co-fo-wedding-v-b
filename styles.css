@@ -411,7 +411,7 @@ footer {
 }
 
 .footer-home {
-    top: 30px;
+    top: 550px;
 }
 
 .footer-giorno {
@@ -616,6 +616,10 @@ footer .social-links a:hover {
     }
 
     @media (max-width: 576px) {
+        nav {
+            padding-bottom: 0;
+        }
+
         .img-container {
             max-width: 100%;
         }
