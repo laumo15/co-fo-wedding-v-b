@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'GN-sans';
+  src: url('Goodnight-London-Sans.ttf'); 
+}
+
+@font-face {
+  font-family: 'GN-script';
+  src: url('Goodnight-London-Script.ttf'); 
+}
+
+@font-face {
+  font-family: 'Freight';
+  src: url('Freight-Big-Book.otf'); 
+}
+
+:root {
+    --default-font-family: 'Freight', sans-serif;
+    --default-font-color: #440500;
+    --headings-font-family: 'GN-script', serif;
+    --headings-font-color: #F2E8CF;
+    --pergamena-color: #E9E1DA;
+    --pino-color: #92C1A0;
+    --foglia-color: #B9C9B4;
+    --crema-color: #F2E8CF;
+    --moro-color: #440500;
+    --rose-color: #D8B9A5;
+    --antico-color: #D29B87;
+}
+
+body {
+    font-family: var(--default-font-family);
+    color: var(--default-font-color);
+    background: var(--foglia-color);
+}
+
+.filter {
+    filter:sepia(0.2);
+}
+
+nav {
+    padding: 20px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 42px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: var(--default-font-color);
+    transition: all 100ms ease-in-out;
+}
+
+nav a:hover, nav li.active a {
+    color: var(--moro-color);
+}
+
+.content-container {
+    padding: 60px 20px;
+}
+
+.hero-img-big {
+    max-width: 200%;
+}
+
+.hero-img-small {
+    max-width: 70%;
+}

@@ -33,6 +33,36 @@ body {
     background: var(--foglia-color);
 }
 
+.very-specific-design {
+  width: 600px;
+  height: 400px;
+  padding: 50px;
+  text-align: center;
+  background: white;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+.scaleable-wrapper {
+  padding: 20px;
+  resize: both;
+  position: relative;
+  background: #666;
+  height: 400px;
+}
+
+.ui-resizable-se {
+  width: 10px;
+  height: 10px;
+  background: orange;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .filter {
     filter:sepia(0.2);
 }
@@ -308,8 +338,11 @@ textarea {
 }
 
 .invia {
+    background-color: var(--crema-color);
+    color: var(--moro-color);
+    min-height: 30px;
     min-width: 120px;
-
+    border-radius: 3px;
 }
 
 .calendar-popup {
