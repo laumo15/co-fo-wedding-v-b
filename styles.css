@@ -32,28 +32,7 @@ body {
     color: var(--default-font-color);
     background: var(--foglia-color);
 }
-
-.very-specific-design {
-  width: 600px;
-  height: 400px;
-  padding: 50px;
-  text-align: center;
-  background: white;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transform-origin: center center;
-}
-
-.scaleable-wrapper {
-  padding: 20px;
-  resize: both;
-  position: relative;
-  background: #666;
-  height: 400px;
-}
-
+s
 .ui-resizable-se {
   width: 10px;
   height: 10px;
@@ -156,6 +135,10 @@ body {
 .container {
     position: relative;
     vertical-align: bottom;
+    max-width: 100%;
+}
+.max-width {
+    max-width: 100%;
 }
 
 .semicircle {
@@ -244,7 +227,7 @@ body {
 
 .footer {
     position: relative;
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     margin-top: 3em;
 }
@@ -265,9 +248,14 @@ h1 {
     line-height: 1.5;
 }
 
+h2 {
+    font-size: 64px;
+}
+
 h4 {
     font-family: "GN-sans";
     color: var(--moro-color);
+    font-size: 48px;
 }
 
 .index-heading {
@@ -278,14 +266,6 @@ h3 {
     font-family: "GN-sans";
     color: var(--headings-font-color);
     font-size: 24px;
-}
-
-h2 {
-    font-size: 64px;
-}
-
-h4 {
-    font-size: 48px;
 }
 
 p {
@@ -432,7 +412,6 @@ footer {
 
 .footer-home {
     top: 30px;
-    left: 300px;
 }
 
 .footer-giorno {
@@ -634,5 +613,49 @@ footer .social-links a:hover {
 
     .portrait {
         max-width: 100%;
+    }
+
+    @media (max-width: 576px) {
+        .img-container {
+            max-width: 100%;
+        }
+
+        .overlay-txt {
+            position: absolute;
+            left: 3%;
+            top: 130px;
+            z-index: 3;
+            text-align: center;
+        }
+        
+        .index-heading {
+            font-size: 46px;
+            line-height: 0.7;
+        }
+
+        .index-heading-cursive {
+            font-size: 30px;
+            line-height: 0.8;
+        }
+
+        .bottom-large {
+            left: 0%;
+            max-width: 100%;
+        }
+
+        .top-small {
+            top: 200px;
+            left: 60%;
+            max-width: 30%;
+            z-index: 2;
+            border: 3px solid var(--crema-color);
+        }
+
+        .footer-home {
+            max-width: 100%;
+            font-size: 12px;
+            top: 360px;
+        }
+
     }
 }
