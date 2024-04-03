@@ -668,12 +668,26 @@ footer .social-links a:hover {
             top: 360px;
         }
 
+        .absolute {
+            position: absolute;
+            top: 420px;
+        }
+
+        .giorno-heading {
+            font-size: 42px;
+        }
+
+        .giorno-h2 {
+            font-size: 36px;
+        }
+
         .giorno-small {
             visibility: hidden;
         }
 
         .footer-giorno {
             font-size: 12px;
+            top: 1160px;
         }
     }
 }
