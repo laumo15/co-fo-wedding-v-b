@@ -15,9 +15,9 @@
     <link rel="shortcut icon" type="image/png" href="/images/logo-small.png"/>
     <meta name="description" content="Form risposta">
 </head>
-<body>
-    <div class="container">
-        <nav class="d-flex justify-content-center">
+<body class="max-width">
+    <div class="container p-0 max-width">
+        <nav class="d-flex justify-content-center max-width">
             <ul>
                 <li><a href="/index.html" title="Homepage">Home</a></li>
                 <li><a href="/giorno-speciale.html" title="RSVP">Un giorno speciale</a></li>
@@ -30,19 +30,19 @@
             </ul>
         </nav>
     </div>
-    <div class="mb-5">
-        <div class="container form-container">
-            <img src="/img/160a8a57-454b-42d8-b5f6-b56c6085450c.jpg" class="rsvp-background mb-5">
-            <div class="overlay-form">
+    <div class="mb-5 max-width">
+        <div class="container form-container p-0 max-width">
+            <img src="/img/160a8a57-454b-42d8-b5f6-b56c6085450c.jpg" class="rsvp-background mb-5 max-width">
+            <div class="overlay-form max-width">
                 <h1 class="rsvp-headings">Vi aspettiamo!</h1>
                 <h3 class="rsvp-headings mt-3 conferma-bottom">È gradita gentile conferma entro il 15 luglio 2024.</h2>
-                <form id="form"
+                <form id="form" class="max-width"
                     method="POST"
                     action="https://script.google.com/macros/s/AKfycbxZvh2WHvk_BpWx_kQ61sCB5q1QjYSLj6J1p9MOB1SFnBitp4_R8fDoLek6rziYkOE3xg/exec"
                 >
-                <input name="Nome" type="text" placeholder="Nome" required>
-                <input name="Cognome" type="text" placeholder="Cognome" required>
-                <select name="Menu">
+                <input name="Nome" type="text" placeholder="Nome" required class="max-width-30">
+                <input name="Cognome" type="text" placeholder="Cognome" required class="max-width-30">
+                <select name="Menu" class="max-width-30">
                         <option value="" disabled selected>Menù</option>
                         <option value="Standard">Standard</option>
                         <option value="Vegetariano">Vegetariano</option>
@@ -52,7 +52,7 @@
                 </select>
                 <br>
                 <span class="rsvp-font">Per quanti ospiti stai confermando, oltre a te?</span>
-                <select name="Ospiti" id="ospiti" class="ml">
+                <select name="Ospiti" id="ospiti" class="ml max-width-50">
                     <option value="" disabled selected>Numero ospiti</option>
                     <option value = "Nessuno">Nessuno</option>
                     <option value = 1>1</option>
@@ -62,15 +62,16 @@
                     <option value = 5>5</option>
                     <option value = 6>6</option>
                 </select>
-                <div id="guestlist"></div>
-                <textarea name="Messaggio" rows="2" cols="58" placeholder="Altre note, allergie, messaggi per gli sposi?"></textarea>
+                <div id="guestlist" class="max-width-50"></div>
+                <br>
+                <textarea name="Messaggio" rows="2" cols="38" placeholder="Altre note, allergie, messaggi per gli sposi?" ></textarea>
                 <br>
                 <button type="submit" value="Invia" class="invia">Invia</button>
                 </form>
             </div>
         </div>
     </div>
-    <div id="grazie-popup" class="grazie-popup">
+    <div id="grazie-popup" class="grazie-popup max-width">
             <div class="closer">
                 <svg class="closer" onclick="closeGraziePopup()" height="1.5rem" viewBox="0 0 24 24" width="2rem" xmlns="http://www.w3.org/2000/svg">
                         <title>Close icon</title>
@@ -88,9 +89,9 @@
             let guestlist = document.querySelector("#guestlist");
             guestlist.innerHTML = "";
             for (let i = 1; i <= ospiti; i++) {
-                guestlist.innerHTML = guestlist.innerHTML + `<input name="Nome ospite ${i}" placeholder="Nome"></input>
-                        <input name="Cognome ospite ${i}" placeholder="Cognome"></input>
-                        <select name="Menu ospite ${i}">
+                guestlist.innerHTML = guestlist.innerHTML + `<input name="Nome ospite ${i}" placeholder="Nome" class="max-width-30"></input>
+                        <input name="Cognome ospite ${i}" placeholder="Cognome" class="max-width-30"></input>
+                        <select name="Menu ospite ${i}" class="max-width-30">
                             <option value="" disabled selected>Menù</option>
                             <option value="Standard">Standard</option>
                             <option value="Vegetariano">Vegetariano</option>

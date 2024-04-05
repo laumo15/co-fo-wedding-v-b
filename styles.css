@@ -178,6 +178,11 @@ s
 
 .giorno-par {
     max-width: 80%;
+    justify-self: center;
+}
+
+.giorno-container {
+    justify-self: center;
 }
 
  .giorno-button {
@@ -279,6 +284,10 @@ p {
 
 .font-giorno p {
     line-height: 1.8;
+}
+
+.giorno-text {
+    margin-left: 10px;
 }
 
 form {
@@ -414,6 +423,10 @@ nav a:hover, nav li.active a {
 .footer-giorno {
     top: 0px;
     left: 0px;
+}
+
+.footer-giorno a {
+    color: var(--default-font-color)
 }
 
 .footer-poi {
@@ -683,8 +696,44 @@ footer .social-links a:hover {
         }
 
         .footer-giorno {
+            position: relative;
             font-size: 12px;
-            top: 1160px;
+            top: 640px;
+        }
+
+        .calendar-popup {
+            max-width: 85%;
+            left: 8%;
+        }
+
+        form {
+            max-width: 100%;
+            margin-top: 90px;
+        }
+
+        .overlay-form {
+            max-width: 100%;
+        }
+
+        h3.rsvp-headings {
+            font-size: 14px;
+        }
+
+        input, select, textarea {
+            font-size: 14px;
+        }
+
+        .rsvp-font {
+            font-size: 18px;
+        }
+
+        .grazie-popup {
+            max-width: 80%;
+            left: 10%;
+        }
+
+        .max-width-30 {
+            max-width: 30%;
         }
     }
 }
