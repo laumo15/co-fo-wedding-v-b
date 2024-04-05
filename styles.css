@@ -404,14 +404,11 @@ nav a {
 
 nav a:hover, nav li.active a {
     text-decoration: underline;
-}
-
-footer {
-    margin: 60px 0;
-}
+}   
 
 .footer-home {
     top: 550px;
+    padding-top: 20px;
 }
 
 .footer-giorno {
