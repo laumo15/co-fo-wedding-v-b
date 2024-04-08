@@ -98,9 +98,10 @@ s
 }
 
 .top-foglia-poi {
-    max-width: 20% !important;
+    max-width: 25% !important;
     z-index: 3;
-    left: 25%
+    left: 70%;
+    top: 300px;
 }
 
 .date {
@@ -427,9 +428,18 @@ nav a:hover, nav li.active a {
     text-decoration: underline;
 }   
 
+.footer-giorno {
+    background-color: #93a58c;
+}
+
 .footer-home {
     top: 550px;
     padding-top: 20px;
+    color: #818e7c;
+}
+
+.footer-home a {
+    color: #818e7c;
 }
 
 .footer-giorno {
@@ -724,6 +734,7 @@ footer .social-links a:hover {
 
         .calendar-popup {
             max-width: 85%;
+            top: 1200% !important;
             left: 8%;
         }
 
@@ -751,7 +762,8 @@ footer .social-links a:hover {
 
         .grazie-popup {
             max-width: 80%;
-            left: 10%;
+            left: 14%;
+            top: 60% !important;
         }
 
         .max-width-30 {
