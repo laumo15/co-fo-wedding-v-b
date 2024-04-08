@@ -582,6 +582,10 @@ footer .social-links a:hover {
     font-size: 14px;
 }
 
+.font-poi {
+    font-size: 22px;
+}
+
 @media (max-width: 960px) {
     h1 {
         font-size: 44px;
@@ -675,7 +679,7 @@ footer .social-links a:hover {
         .footer-home {
             max-width: 100%;
             font-size: 12px;
-            top: 360px;
+            top: 380px;
         }
 
         .absolute {
@@ -698,7 +702,7 @@ footer .social-links a:hover {
         .footer-giorno {
             position: relative;
             font-size: 12px;
-            top: 640px;
+            top: 680px;
         }
 
         .calendar-popup {
@@ -708,7 +712,8 @@ footer .social-links a:hover {
 
         form {
             max-width: 100%;
-            margin-top: 90px;
+            margin-top: 110px;
+            margin-bottom: 30px;
         }
 
         .overlay-form {
@@ -737,7 +742,7 @@ footer .social-links a:hover {
         }
 
         .e-poi-text {
-            padding-top: 550px;
+            padding-top: 350px;
         }
 
         .max-width-80 {
@@ -746,6 +751,34 @@ footer .social-links a:hover {
 
         .grazie {
             padding-top: 50px;
+        }
+
+        .height-auto {
+            height: auto;
+        }
+
+        .bottom-large-poi {
+            left: 10%;
+        }
+
+        .font-poi {
+            font-size: 16px;
+        }
+
+        .footer-poi {
+            font-size: 12px;
+        }
+
+        .top-small-poi {
+            top: 120px;
+        }
+
+        .e-poi-text {
+            justify-self: center;
+        }
+
+        .width-e-poi {
+            margin: 0;
         }
     }
 }
