@@ -755,12 +755,12 @@ footer .social-links a:hover {
         .footer-giorno {
             position: relative;
             font-size: 12px;
-            top: 680px;
+            top: 960px;
         }
 
         .calendar-popup {
             max-width: 85%;
-            top: 1200% !important;
+            top: 200% !important;
             left: 8%;
         }
 
