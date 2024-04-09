@@ -13,10 +13,20 @@
   src: url('Freight-Big-Book.otf'); 
 }
 
+@font-face {
+    font-family: "Bluehill";
+    src: url(Bluehill.otf);
+}
+
+@font-face {
+    font-family: "Manstein";
+    src: url("Manstein.ttf");
+}
+
 :root {
     --default-font-family: 'Freight', sans-serif;
     --default-font-color: #440500;
-    --headings-font-family: 'GN-script', serif;
+    --headings-font-family: 'Manstein', serif;
     --headings-font-color: #F2E8CF;
     --pergamena-color: #E9E1DA;
     --pino-color: #92C1A0;
@@ -238,6 +248,12 @@ s
     text-align: left;
     font-size: 22px;
     line-height: 4;
+}
+
+.par-footer {
+    margin-bottom: 0 !important;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .conferma-bottom {
