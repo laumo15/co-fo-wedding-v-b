@@ -80,10 +80,11 @@ s
 
 .overlay-txt {
     position: absolute;
-    left: 15%;
-    top: 60px;
+    left: 27%;
+    top: 240px;
     z-index: 3;
     text-align: center;
+    font-size: 48px;
 }
 
 .overlay-txt-poi {
@@ -261,14 +262,23 @@ s
 }
 
 .footer {
-    position: relative;
+    position: absolute;
     max-width: 100%;
     text-align: center;
     margin-top: 3em;
+    color: #818e7c;
 }
 
 .footer a {
-    color: var(--moro-color);
+    color: #818e7c;
+}
+
+.par-footer {
+    color: #818e7c;
+}
+
+.par-footer a {
+    color: #818e7c
 }
 
 h2, h5, h6 {
@@ -280,11 +290,12 @@ h2, h5, h6 {
 h1 {
     font-family: "GN-sans";
     font-size: 96px;
-    line-height: 1.5;
+    line-height: 1;
 }
 
 h2 {
-    font-size: 64px;
+    font-size: 56px;
+    line-height: 1;
 }
 
 h4 {
@@ -445,10 +456,6 @@ nav a:hover, nav li.active a {
     text-decoration: underline;
 }   
 
-.footer-giorno {
-    background-color: #93a58c;
-}
-
 .footer-home {
     top: 550px;
     padding-top: 20px;
@@ -464,11 +471,9 @@ nav a:hover, nav li.active a {
     left: 0px;
 }
 
-.footer-giorno a {
-    color: var(--default-font-color)
-}
-
 .footer-poi {
+    text-align: center;
+    width: 100%;
     top: 70px;
     margin-bottom: 30px;
 }
@@ -692,7 +697,7 @@ footer .social-links a:hover {
         .overlay-txt {
             position: absolute;
             left: 3%;
-            top: 130px;
+            top: 140px;
             z-index: 3;
             text-align: center;
         }
@@ -755,7 +760,7 @@ footer .social-links a:hover {
         .footer-giorno {
             position: relative;
             font-size: 12px;
-            top: 960px;
+            top: 900px;
         }
 
         .calendar-popup {
@@ -784,6 +789,7 @@ footer .social-links a:hover {
 
         .rsvp-font {
             font-size: 18px;
+            color: var(--moro-color)
         }
 
         .grazie-popup {
