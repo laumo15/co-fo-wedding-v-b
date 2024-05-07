@@ -74,6 +74,12 @@ s
     position: relative;
 }
 
+.home-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .overlay-img {
     position: absolute;
 }
@@ -457,9 +463,9 @@ nav a:hover, nav li.active a {
 }   
 
 .footer-home {
-    top: 550px;
-    padding-top: 60px;
     color: #818e7c;
+    position: relative;
+    margin-top: 0;
 }
 
 .footer-home a {
@@ -476,6 +482,12 @@ nav a:hover, nav li.active a {
     width: 100%;
     top: 70px;
     margin-bottom: 30px;
+}
+
+.home-picture {
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
 }
 
 .e-poi-collage {
@@ -732,8 +744,8 @@ footer .social-links a:hover {
 
         .footer-home {
             max-width: 100%;
-            font-size: 12px;
-            top: 380px;
+            font-size: 10px;
+            position: relative
         }
 
         .absolute {
