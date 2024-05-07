@@ -488,6 +488,7 @@ nav a:hover, nav li.active a {
     max-width: 70%;
     display: block;
     margin: 0 auto;
+    padding-left: 50px;
 }
 
 .e-poi-collage {
