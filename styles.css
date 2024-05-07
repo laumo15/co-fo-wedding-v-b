@@ -462,6 +462,10 @@ nav a:hover, nav li.active a {
     text-decoration: underline;
 }   
 
+.logo-link:hover {
+    text-decoration: none;
+}
+
 .footer-home {
     color: #818e7c;
     position: relative;
